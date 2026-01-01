@@ -1,0 +1,16 @@
+
+{
+  "short_name": "BOA Mobile",
+  "name": "Bank of America Mobile Banking",
+  "icons": [
+    {
+      "src": "https://www.bankofamerica.com/pa/global-assets/1.0/graphic/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#00529b",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Bank of America | Mobile Banking</title>
+    <meta name="theme-color" content="#00529b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="manifest" href="/manifest.json" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+      
+      :root {
+        --boa-blue: #00529b;
+        --boa-red: #E31837;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+        overscroll-behavior-y: contain;
+        touch-action: manipulation;
+      }
+      
+      .boa-blue { color: var(--boa-blue); }
+      .bg-boa-blue { background-color: var(--boa-blue); }
+      .boa-red { color: var(--boa-red); }
+      .bg-boa-red { background-color: var(--boa-red); }
+      
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+      @keyframes slideUp {
+        from { transform: translateY(100%); }
+        to { transform: translateY(0); }
+      }
+      .animate-slideUp {
+        animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.3s ease-out;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "recharts": "https://esm.sh/recharts@^3.6.0",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-gray-50 text-slate-900 overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
